@@ -179,10 +179,13 @@ button span{
 
 @media screen and (max-width: 375px){
     .container{
-        /* background: hsl(222, 26%, 31%); */
-        
-        padding: 10px 20px;
+        height: 97vh;
+        padding: 5px 10px;
         margin: 0;
+    }
+
+    .attribution{
+        padding: 0px;
     }
       
 }
