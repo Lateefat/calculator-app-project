@@ -12,15 +12,58 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {padding: 10px 0git;}
   </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <div class="container">
+    
+    <nav>
+      <div class="calc theme1calc theme1calcp"><h1>calc</h1></div>
+      <p class="theme1p theme1calcp">THEME</p>
+      <div class="list123">
+        <ul>
+          <li id="onebtn">1</li>
+          <li id="twobtn">2</li>
+          <li id="threebtn">3</li>
+        </ul>
+        <button type="button" id="btn"><span class="theme1btn" id="spanbtn"></span></button>
+      </div>
+        
+      </nav>
 
+      <div class="display">
+        <input type="number" class="screen" id="screen">
+      </div>
 
+      <div class="keypad theme1keypad">
+        <div class="key theme1keys">7</div>
+        <div class="key theme1keys">8</div>
+        <div class="key theme1keys">9</div>
+        <div class="key theme1delresetkey" id="del">DEL</div>
+        <div class="key theme1keys">4</div>
+        <div class="key theme1keys">5</div>
+        <div class="key theme1keys">6</div>
+        <div class="key theme1keys">+</div>
+        <div class="key theme1keys">1</div>
+        <div class="key theme1keys">2</div>
+        <div class="key theme1keys">3</div>
+        <div class="key theme1keys">-</div>
+        <div class="key theme1keys">.</div>
+        <div class="key theme1keys">0</div>
+        <div class="key theme1keys">/</div>
+        <div class="key theme1keys">x</div>
+        <div class="key theme1delresetkey" id="reset">RESET</div>
+        <div class="key theme1equal" id="equalkey">=</div>
+      </div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Lateefat B. Ibrahim</a>.
   </div>
+ 
+  <script src="./style.js"></script>
 </body>
 </html>

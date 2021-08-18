@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background: hsl(222, 26%, 31%);
+    height: 90vh;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 50px 200px;
+    font-family: 'Spartan', sans-serif;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* padding: 0 8%; */
+    grid-template-areas: 
+    "calc . para list123";
+    
+}
+
+nav .calc{
+    grid-area: calc;
+    padding-top: 30px;
+    color: hsl(100, 100%, 100%);
+}
+
+nav p{
+    grid-area: para;
+    text-align: right;
+    padding-top: 30px;
+    
+}
+
+nav .list123{
+    grid-area: list123;
+    text-align: right;
+}
+
+.list123 li{
+    display: inline-block;
+    padding: 5px 7px;
+    color: #fff;
+}
+
+.list123 #one{
+    color: hsl(6, 63%, 50%);
+}
+
+button{
+    background: hsl(223, 31%, 20%);
+    height: 20px;
+    width: 72px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    cursor: pointer;
+}
+button span{
+    display: block;
+    background:  hsl(6, 63%, 50%);
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+}
+
+.display{
+    display: grid;
+    padding: 20px 0;
+    
+    
+}
+#screen{
+    height: 90px;
+    border-radius: 10px;
+    background: hsl(223, 31%, 20%);
+    border: 0;
+    outline: 0;
+}
+
+.keypad{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background: hsl(224, 36%, 15%);
+    padding: 20px 25px ;
+}
+.key{
+    font-size: 32px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#del, #reset{
+    font-size: 1rem;
+    padding-top: 18px;
+    }
+#reset, #equalkey{
+    grid-column: span 2;
+}
+
+.theme1p{
+    color: hsl(100, 100%, 100%);
+}
+
+.theme1btn{
+    margin-left: 3px;
+}
+
+.theme2btn{
+    margin-left: 28px;
+    background: hsl(25, 98%, 40%);
+}
+
+.theme3btn{
+    margin-left: 50px;
+    background: hsl(176, 100%, 44%);
+}
+
+.theme1delresetkey{
+    background: hsl(225, 21%, 49%);
+    box-shadow: 1px 4px hsl(224, 28%, 35%);
+    color: hsl(100, 100%, 100%);
+}
+.theme2delresetkey{
+    background: hsl(185, 42%, 37%);
+    box-shadow: 1px 4px hsl(185, 58%, 25%);
+    color: hsl(100, 100%, 100%);
+}
+.theme3delresetkey{
+    background: hsl(281, 89%, 26%);
+    box-shadow: 1px 4px hsl(285, 91%, 52%);
+    color: hsl(100, 100%, 100%);
+}
+
+.theme1keys{
+    background: hsl(30, 25%, 89%);
+    box-shadow: 1px 4px hsl(28, 16%, 65%);
+    color: hsl(221, 14%, 31%);
+}
+
+.theme2keys{
+    background: hsl(45, 7%, 89%);
+    box-shadow: hsl(35, 11%, 61%);
+    color: hsl(60, 10%, 19%);
+}
+.theme3keys{
+    background: hsl(268, 47%, 21%);
+    box-shadow: hsl(290, 70%, 36%);
+    color: hsl(52, 100%, 62%);
+}
+
+
+.theme1equal{
+    background:  hsl(6, 63%, 50%);
+    color: hsl(100, 100%, 100%);
+    box-shadow: 1px 4px hsl(6, 70%, 34%);
+}
+.theme2equal{
+    background:  hsl(25, 98%, 40%);
+    color: hsl(100, 100%, 100%);
+    box-shadow: 1px 4px hsl(25, 99%, 27%);
+}
+.theme3equal{
+    background:  hsl(176, 100%, 44%);
+    color: hsl(198, 20%, 13%);
+    box-shadow: 1px 4px hsl(177, 92%, 70%);
+}
+
+
+
+@media screen and (max-width: 375px){
+    .container{
+        /* background: hsl(222, 26%, 31%); */
+        
+        padding: 10px 20px;
+        margin: 0;
+    }
+      
+}
