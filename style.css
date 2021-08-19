@@ -7,40 +7,44 @@
 }
 
 .container{
+    display:grid;
     background: hsl(222, 26%, 31%);
-    height: 90vh;
+    height: 100vh;
     max-width: 800px;
-    margin: 50px auto;
-    padding: 50px 200px;
+    margin: 10px auto;
+    padding: 5px 200px;
+    justify-content: center;
+    align-content: center;
     font-family: 'Spartan', sans-serif;
+    transition: background 0.9s;
 }
 
-nav{
+.nav{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* padding: 0 8%; */
+    grid-template-columns: auto auto auto auto;
     grid-template-areas: 
     "calc . para list123";
-    
 }
 
-nav .calc{
+ .nav .calc{
     grid-area: calc;
     padding-top: 30px;
     color: hsl(100, 100%, 100%);
-}
-
-nav p{
-    grid-area: para;
-    text-align: right;
-    padding-top: 30px;
     
 }
 
-nav .list123{
-    grid-area: list123;
+.nav .theme{
+    grid-area: para;
     text-align: right;
+    padding-top: 40px;
+    
 }
+
+.nav .list123{
+    grid-area: list123;
+    text-align: end;
+    padding-top: 10px;
+   } 
 
 .list123 li{
     display: inline-block;
@@ -52,36 +56,44 @@ nav .list123{
     color: hsl(6, 63%, 50%);
 }
 
-button{
+.nav .list123 #btn{
     background: hsl(223, 31%, 20%);
     height: 20px;
-    width: 72px;
+    width: 70px;
     border-radius: 20px;
     border: 0;
     outline: 0;
-    margin-left: 20px;
+    /* margin-left: 3px; */
     cursor: pointer;
 }
-button span{
+.nav .list123 button span{
     display: block;
     background:  hsl(6, 63%, 50%);
     height: 14px;
     width: 14px;
     border-radius: 50%;
+    transition: margin-left 0.9s;
+}
+
+#onebtn{
+    color: hsl(6, 63%, 50%);
 }
 
 .display{
-    display: grid;
     padding: 20px 0;
-    
-    
 }
 #screen{
-    height: 90px;
+    
+    height: 70px;
     border-radius: 10px;
     background: hsl(223, 31%, 20%);
     border: 0;
     outline: 0;
+    font-size: 32px;
+    text-align: right;
+    padding-right: 15px;
+    width: 100%;
+    
 }
 
 .keypad{
@@ -89,12 +101,15 @@ button span{
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     background: hsl(224, 36%, 15%);
-    padding: 20px 25px ;
+    padding: 20px 15px ;
+    /* margin-right: 20px; */
 }
-.key{
+.keypad .button{
     font-size: 32px;
-    padding: 10px;
+    padding: 10px 0;
     border-radius: 5px;
+    border: 0;
+    outline: 0;
     text-align: center;
     cursor: pointer;
 }
@@ -109,6 +124,16 @@ button span{
 
 .theme1p{
     color: hsl(100, 100%, 100%);
+}
+
+.theme1Input{
+    color: hsl(100, 100%, 100%);
+}
+.theme2Input{
+    color: hsl(60, 10%, 19%);
+}
+.theme3Input{
+    color: hsl(52, 100%, 62%);
 }
 
 .theme1btn{
@@ -145,17 +170,20 @@ button span{
     background: hsl(30, 25%, 89%);
     box-shadow: 1px 4px hsl(28, 16%, 65%);
     color: hsl(221, 14%, 31%);
+    transition: background 0.9s;
 }
 
 .theme2keys{
     background: hsl(45, 7%, 89%);
     box-shadow: hsl(35, 11%, 61%);
     color: hsl(60, 10%, 19%);
+    transition: background 0.9s;
 }
 .theme3keys{
     background: hsl(268, 47%, 21%);
     box-shadow: hsl(290, 70%, 36%);
     color: hsl(52, 100%, 62%);
+    transition: background 0.9s;
 }
 
 
@@ -175,15 +203,15 @@ button span{
     box-shadow: 1px 4px hsl(177, 92%, 70%);
 }
 
-
-
 @media screen and (max-width: 375px){
     .container{
-        height: 97vh;
-        padding: 5px 10px;
+        padding: 0;
         margin: 0;
+        display: block;
+        width: 100vw;            
     }
-
+    
+   
     .attribution{
         padding: 0px;
     }

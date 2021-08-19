@@ -33,16 +33,18 @@ function chooseTheme(){
             p.style.color = "hsl(100, 100%, 100%)";
             screen.style.backgroundColor = "hsl(223, 31%, 20%)";
             keypad.style.backgroundColor = "hsl(224, 36%, 15%)";
-            equalkey.classList = "key theme1equal"
+            equalkey.classList = "button theme1equal";
+            screen.classList = "screen theme1Input";
             for(let i = 0; i < delreset.length; i++)
             {
-                delreset[i].classList = "key theme1delresetkey";
+                delreset[i].classList = "button theme1delresetkey";
             };
             for(let i = 0; i < keys.length; i++)
             {
-                keys[i].classList = "key theme1keys";
+                keys[i].classList = "button theme1keys";
             };
             counter++;
+            setTimeout(() => {}, 5000);
             break;
 
         case 2:   
@@ -56,7 +58,8 @@ function chooseTheme(){
             p.style.color = "hsl(60, 10%, 19%)";
             screen.style.backgroundColor = "hsl(0, 0%, 93%)";
             keypad.style.backgroundColor = "hsl(0, 5%, 81%)";
-            equalkey.classList.toggle("theme2equal")
+            equalkey.classList.toggle("theme2equal");
+            screen.classList = "screen theme2Input";
 
             for(let i = 0; i < delreset.length; i++)
             {
@@ -68,6 +71,7 @@ function chooseTheme(){
             };
 
             counter++;
+            
             break;
             
 
@@ -82,7 +86,8 @@ function chooseTheme(){
             p.style.color = "hsl(52, 100%, 62%)";
             screen.style.backgroundColor = "hsl(268, 71%, 12%)";
             keypad.style.backgroundColor = "hsl(268, 71%, 12%)";
-            equalkey.classList.toggle("theme3equal")
+            equalkey.classList.toggle("theme3equal");
+            screen.classList = "screen theme3Input";
 
             for(let i = 0; i < delreset.length; i++)
             {
@@ -93,6 +98,7 @@ function chooseTheme(){
                 keys[i].classList.toggle("theme3keys");
             };
             counter = 1; 
+            setTimeout(() => {}, 5000);
             break;
 
         default:
