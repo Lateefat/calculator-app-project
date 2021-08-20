@@ -44,7 +44,7 @@ function chooseTheme(){
                 keys[i].classList = "button theme1keys";
             };
             counter++;
-            setTimeout(() => {}, 5000);
+            setTimeout(() => {}, 500);
             break;
 
         case 2:   
@@ -71,7 +71,8 @@ function chooseTheme(){
             };
 
             counter++;
-            
+            setTimeout(() => {}, 500);
+
             break;
             
 
@@ -98,7 +99,7 @@ function chooseTheme(){
                 keys[i].classList.toggle("theme3keys");
             };
             counter = 1; 
-            setTimeout(() => {}, 5000);
+            setTimeout(() => {}, 500);
             break;
 
         default:

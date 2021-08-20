@@ -15,7 +15,7 @@
     padding: 5px 200px;
     justify-content: center;
     align-content: center;
-    font-family: 'Spartan', sans-serif;
+    /* font-family: 'Spartan', sans-serif; */
     transition: background 0.9s;
 }
 
@@ -24,6 +24,7 @@
     grid-template-columns: auto auto auto auto;
     grid-template-areas: 
     "calc . para list123";
+    font-family: 'Spartan', sans-serif;
 }
 
  .nav .calc{
@@ -81,6 +82,7 @@
 
 .display{
     padding: 20px 0;
+    font-family: 'Spartan', sans-serif;
 }
 #screen{
     
@@ -93,6 +95,7 @@
     text-align: right;
     padding-right: 15px;
     width: 100%;
+    font-family: 'Spartan', sans-serif;
     
 }
 
@@ -112,6 +115,7 @@
     outline: 0;
     text-align: center;
     cursor: pointer;
+    font-family: 'Spartan', sans-serif;
 }
 
 #del, #reset{

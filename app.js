@@ -21,19 +21,18 @@ eachkey.map( button => {
 
       // display result
       case "=":
-      // console.log(counter)
-      
+      let equalcounter;
       // clear screen after displaying result
-      if(counter > 2){
+      if(equalcounter > 2){
         output.value = "";
-        counter = 0; 
+        equalcounter = 0; 
         return;
       } else
        try{
         output.value = eval(output.value).toLocaleString();
-        counter++;  
+        equalcounter++;  
       } catch{
-        output.value = "Invalid input"
+        output.value = "Invalid input";
         }   
         break;
 
