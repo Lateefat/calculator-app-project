@@ -2,6 +2,11 @@
 let output = document.getElementById("screen");
 let eachkey = Array.from(document.getElementsByClassName("button"));
 let button = document.querySelectorAll("button");
+let equalcounter = 0;
+
+
+
+
 eachkey.map( button => {
   button.addEventListener("click", (evt) => {
     
@@ -21,9 +26,10 @@ eachkey.map( button => {
 
       // display result
       case "=":
-      let equalcounter;
+      
+      console.log(equalcounter)
       // clear screen after displaying result
-      if(equalcounter > 2){
+      if(equalcounter > 0){
         output.value = "";
         equalcounter = 0; 
         return;
