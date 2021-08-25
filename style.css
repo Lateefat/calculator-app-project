@@ -10,7 +10,7 @@
 .container{
     display:grid;
     background: hsl(222, 26%, 31%);
-    min-height: 80%;
+    height: 100vh;
     max-width: 800px;
     margin: 10px auto;
     padding: 5px 200px;
