@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution on Github](https://github.com/Lateefat/calculator-app-project)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://calculator-app-lateefat.netlify.app/)
 
 ## My process
 
